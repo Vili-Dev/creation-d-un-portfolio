@@ -42,21 +42,21 @@
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Par Email</h3>
-                    <p class="contact-value">votre.email@domaine.com</p>
+                    <p class="contact-value">m.z.dev@outlook.fr</p>
                     <p>Réponse sous 24h maximum</p>
                 </div>
                 
                 <div class="contact-card">
                     <div class="contact-icon">📱</div>
                     <h3>LinkedIn</h3>
-                    <p class="contact-value">linkedin.com/in/votreprofil</p>
+                    <p class="contact-value">linkedin.com/in/mohamed-zaouchi</p>
                     <p>Disponible pour échanger sur vos projets</p>
                 </div>
                 
                 <div class="contact-card">
                     <div class="contact-icon">📄</div>
                     <h3>CV Téléchargeable</h3>
-                    <a href="cv.pdf" class="download-button">Télécharger mon CV</a>
+                    <a href="cv.pdf" class="download-button">Télécharger mon CV (bientôt disponible)</a>
                     <p>Version complète avec détails professionnels</p>
                 </div>
             </div>
@@ -66,7 +66,8 @@
             <h2>Formulaire de Contact</h2>
             <p>Préférez-vous envoyer un message directement ? Remplissez ce formulaire simple :</p>
             
-            <form id="contact-form" class="rh-friendly-form">
+            <form id="contact-form" class="rh-friendly-form" data-netlify="true" name="contact">
+            <input type="hidden" name="form-name" value="contact" />
                 <div class="form-group">
                     <label for="name">Votre nom</label>
                     <input type="text" id="name" name="name" required>
