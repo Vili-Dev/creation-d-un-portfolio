@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Développeur Web & Mobile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- BANNIÈRE TEMPORAIRE POUR LA RECHERCHE DE STAGE -->
+    <div class="stage-banner">
+        <div class="banner-content">
+            <span class="banner-icon">📅</span>
+            <span class="banner-text">À la recherche d'un stage du 23 octobre au 31 décembre 2025</span>
+            <a href="me-contacter.html" class="banner-cta">Proposer une opportunité</a>
+        </div>
+    </div>
+    
     <header>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="me-contacter.html">Me contacter</a></li>
+                <li><a href="projets.html">Mes Réalisations</a></li>
+                <li><a href="a-propos.html">Mon Parcours</a></li>
+                <li><a href="me-contacter.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section id="accueil">
+        <section id="accroche">
+            <div class="summary-card">
+                <h1>Je transforme les idées en solutions web intuitives</h1>
+                <p>En 6 mois de formation intensive, j'ai développé des compétences pratiques pour créer des applications web et mobiles qui :</p>
+                <ul class="benefits-list">
+                    <li>améliorent l'expérience utilisateur</li>
+                    <li>résolvent des problèmes concrets</li>
+                    <li>s'adaptent aux besoins métiers</li>
+                </ul>
+                <a href="projets.html" class="cta-button">Découvrez mes réalisations</a>
+            </div>
+        </section>
+        
+        <section id="presentation">
             <div class="title-container">
                 <h1>Bienvenue sur mon portfolio</h1>
             </div>
@@ -27,7 +50,29 @@
                 <p>Je nourris de grandes ambitions pour mes projets à venir et je suis déterminé à continuellement améliorer mes compétences et à rester à jour avec les dernières technologies et tendances dans le domaine du développement web et mobile.</p>
             </div>
         </section>
+        
+        <section id="why-me">
+            <h2>Pourquoi travailler avec moi ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Orientation Résultats</h3>
+                    <p>Je conçois des solutions qui répondent à des besoins métier concrets et mesurables</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Adaptabilité</h3>
+                    <p>Je m'adapte rapidement aux nouvelles technologies et aux besoins changeants</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Collaboration</h3>
+                    <p>Je travaille efficacement en équipe et communique clairement avec tous les profils</p>
+                </div>
+            </div>
+        </section>
     </main>
+    
     <script src="./script.js"></script>
 </body>
 </html>

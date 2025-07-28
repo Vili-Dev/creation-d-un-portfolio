@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Mon Portfolio</title>
+    <title>Mon Parcours - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- BANNIÈRE TEMPORAIRE POUR LA RECHERCHE DE STAGE -->
+    <div class="stage-banner">
+        <div class="banner-content">
+            <span class="banner-icon">📅</span>
+            <span class="banner-text">À la recherche d'un stage du 23 octobre au 31 décembre 2025</span>
+            <a href="me-contacter.html" class="banner-cta">Proposer une opportunité</a>
+        </div>
+    </div>
+    
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="a-propos.html" class="active">À propos</a></li>
-                <li><a href="me-contacter.html">Me contacter</a></li>
+                <li><a href="projets.html">Mes Réalisations</a></li>
+                <li><a href="a-propos.html" class="active">Mon Parcours</a></li>
+                <li><a href="me-contacter.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -21,564 +30,117 @@
     <main>
         <section id="presentation">
             <div class="title-container">
-                <h1>À propos de moi</h1>
+                <h1>Mon Parcours de Développeur Web & Mobile</h1>
             </div>
             <div class="presentation">
-                <p>Bonjour ! Je suis un étudiant passionné par le développement web et mobile. J'ai choisi de me spécialiser dans le parcours Développement Web et Web Mobile (DWWM) pour acquérir les compétences nécessaires pour créer des applications web et mobiles innovantes.</p>
-                <p>Étudiant en Développement Web et Web Mobile (DWWM)</p>
+                <p>Voici comment j'ai développé mes compétences pratiques pour créer des solutions web et mobiles qui répondent à des besoins réels.</p>
             </div>
         </section>
         
-        <section id="skill-game">
-            <h2>Mes Compétences</h2>
-            <div class="skill-grid" id="skill-grid">
-                <div class="skill-card" data-skill="HTML" data-level="Avancé" data-projects="Portfolio, Site E-commerce">
-                    HTML
-                </div>
-                <div class="skill-card" data-skill="CSS" data-level="Avancé" data-projects="Portfolio, Application Mobile">
-                    CSS
-                </div>
-                <div class="skill-card" data-skill="JavaScript" data-level="Intermédiaire" data-projects="Portfolio, Mini-jeu">
-                    JavaScript
-                </div>
-                <div class="skill-card" data-skill="React" data-level="Débutant" data-projects="Projet 2">
-                    React
-                </div>
-                <div class="skill-card" data-skill="PHP" data-level="Intermédiaire" data-projects="Site E-commerce">
-                    PHP
-                </div>
-                <div class="skill-card" data-skill="MySQL" data-level="Intermédiaire" data-projects="Site E-commerce">
-                    MySQL
-                </div>
-            </div>
-            <p class="game-instructions">Cliquez sur les cartes pour découvrir mes projets associés !</p>
-        </section>
-        
-        <!-- SECTION TIMELINE SIMPLIFIÉE - SANS TEXTES DE STATUT -->
-        <section id="training-timeline">
-            <h2>Mon Parcours de Formation</h2>
+        <section id="career-path">
+            <h2>Ma Progression en 6 Mois de Formation Intensive</h2>
             
-            <div class="timeline-summary">
-                <div class="progress-overview">
-                    <div class="progress-bar">
-                        <div class="progress" id="module-progress" style="width: 0%"></div>
+            <div class="timeline-rh">
+                <div class="timeline-item completed">
+                    <div class="timeline-date">Mai 2025</div>
+                    <div class="timeline-content">
+                        <h3>Création de sites web accessibles</h3>
+                        <p>J'ai appris à concevoir des interfaces claires et navigables pour tous les utilisateurs, en respectant les normes d'accessibilité.</p>
+                        <div class="explanation-tooltip">
+                            <p><span class="tech-term" data-explanation="HTML5 est la base des sites web modernes, comme les fondations d'une maison">HTML5</span> : Structure claire des pages pour une navigation facile</p>
+                            <p><span class="tech-term" data-explanation="CSS3 permet de styliser les sites web pour qu'ils soient attrayants et adaptés à tous les écrans">CSS3</span> : Design responsive qui s'adapte à tous les appareils</p>
+                        </div>
                     </div>
-                    <p>Progression : <span id="completed-modules">0</span>/7 modules complétés</p>
                 </div>
                 
-                <div class="module-key">
-                    <span class="module-indicator" style="background: #3498db;"></span> Module 1
-                    <span class="module-indicator" style="background: #2ecc71;"></span> Module 2
-                    <span class="module-indicator" style="background: #e74c3c;"></span> Module 3
-                    <span class="module-indicator" style="background: #f39c12;"></span> Module 4
-                    <span class="module-indicator" style="background: #9b59b6;"></span> Module 5
-                    <span class="module-indicator" style="background: #1abc9c;"></span> Module 6
-                    <span class="module-indicator" style="background: #e67e22;"></span> Module 7
+                <div class="timeline-item current">
+                    <div class="timeline-date">Juillet 2025</div>
+                    <div class="timeline-content">
+                        <h3>Développement d'applications interactives</h3>
+                        <p>J'ai créé des fonctionnalités dynamiques qui améliorent l'engagement des utilisateurs (ex: gestion de tâches, jeux interactifs).</p>
+                        <div class="explanation-tooltip">
+                            <p><span class="tech-term" data-explanation="JavaScript rend les sites web interactifs (ex: animations, formulaires dynamiques)">JavaScript</span> : Comportements dynamiques pour une meilleure expérience utilisateur</p>
+                            <p><span class="tech-term" data-explanation="Canvas est une technologie pour créer des graphiques et des animations dans le navigateur">Canvas</span> : Création de jeux et d'animations fluides</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="modules-container">
-                <!-- Les modules seront générés dynamiquement ici -->
-            </div>
-            
-            <div class="acquired-skills">
-                <h3>Compétences Acquises <span id="progress-count">(0/0)</span></h3>
-                <ul id="skills-list"></ul>
+                
+                <div class="timeline-item planned">
+                    <div class="timeline-date">Septembre 2025</div>
+                    <div class="timeline-content">
+                        <h3>Applications professionnelles avec React</h3>
+                        <p>Je développerai des solutions web modernes pour répondre aux besoins spécifiques des entreprises.</p>
+                        <div class="explanation-tooltip">
+                            <p><span class="tech-term" data-explanation="React est une bibliothèque JavaScript pour créer des interfaces utilisateur complexes">React</span> : Développement d'applications web performantes et évolutives</p>
+                            <p><span class="tech-term" data-explanation="Firebase est une plateforme Google pour le développement d'applications mobiles et web">Firebase</span> : Gestion des utilisateurs et des données en temps réel</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
-        <section id="objectifs">
-            <div class="title-container">
-                <h1>Mes Objectifs</h1>
-            </div>
-            <div class="presentation">
-                <p>Devenir un développeur web et mobile polyvalent et créer des applications innovantes.</p>
-                <p>Je suis déterminé à continuellement améliorer mes compétences et à rester à jour avec les dernières technologies et tendances dans le domaine du développement web et mobile.</p>
-                <p>En dehors du développement, j'aime explorer de nouvelles technologies et participer à des projets open source.</p>
+        <section id="skills-summary">
+            <h2>Mes Compétences Clés</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Design UX/UI</h3>
+                    <p>Création d'interfaces intuitives avec Figma et Adobe XD</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-level-container">
+                            <span class="skill-level-label">Mon niveau :</span>
+                            <span class="skill-level-value">Intermédiaire</span>
+                        </div>
+                        <div class="skill-projects-container">
+                            <span class="skill-projects-label">Projets réalisés :</span>
+                            <span class="skill-projects-value">Portfolio, Menu Hub</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Développement Frontend</h3>
+                    <p>Création de sites web interactifs avec HTML, CSS et JavaScript</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-level-container">
+                            <span class="skill-level-label">Mon niveau :</span>
+                            <span class="skill-level-value">Avancé</span>
+                        </div>
+                        <div class="skill-projects-container">
+                            <span class="skill-projects-label">Projets réalisés :</span>
+                            <span class="skill-projects-value">Calculatrice, Pendu DBZ, Tic Tac Toe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Développement d'applications avec React Native</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 45%"></div>
+                    </div>
+                    <div class="skill-info">
+                        <div class="skill-level-container">
+                            <span class="skill-level-label">Mon niveau :</span>
+                            <span class="skill-level-value">Débutant</span>
+                        </div>
+                        <div class="skill-projects-container">
+                            <span class="skill-projects-label">Projets réalisés :</span>
+                            <span class="skill-projects-value">En cours d'apprentissage</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    
-    <style>
-        /* Styles simplifiés pour la timeline */
-        .timeline-summary {
-            max-width: 800px;
-            margin: 1.5rem auto 2.5rem;
-            padding: 1.5rem;
-            background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-        }
-        
-        .progress-bar {
-            height: 10px;
-            background: var(--bg-primary);
-            border-radius: 5px;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        
-        .progress {
-            height: 100%;
-            background: var(--accent-color);
-            border-radius: 5px;
-            transition: width 1s ease;
-        }
-        
-        .module-key {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            font-size: 0.9rem;
-            color: var(--text-color);
-        }
-        
-        .module-indicator {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-        
-        .modules-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .module-item {
-            background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: var(--shadow-md);
-            margin-bottom: 1.5rem;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .module-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-        }
-        
-        .module-header {
-            padding: 1.2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-left: 4px solid;
-            transition: all 0.3s;
-        }
-        
-        /* Couleurs par module */
-        .module-header[data-module="M1"] { border-left-color: #3498db; }
-        .module-header[data-module="M2"] { border-left-color: #2ecc71; }
-        .module-header[data-module="M3"] { border-left-color: #e74c3c; }
-        .module-header[data-module="M4"] { border-left-color: #f39c12; }
-        .module-header[data-module="M5"] { border-left-color: #9b59b6; }
-        .module-header[data-module="M6"] { border-left-color: #1abc9c; }
-        .module-header[data-module="M7"] { border-left-color: #e67e22; }
-        
-        .module-title {
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        
-        .module-status {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9rem;
-        }
-        
-        .module-status-icon {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .module-content {
-            padding: 0 1.2rem 1.2rem;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-        }
-        
-        .module-content.active {
-            max-height: 500px;
-            padding-top: 0;
-            padding-bottom: 1.2rem;
-        }
-        
-        .module-dates {
-            color: var(--text-color);
-            opacity: 0.8;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
-        }
-        
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 10px;
-        }
-        
-        .skill-item {
-            padding: 0.6rem;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .skill-item.unlocked {
-            background: rgba(52, 152, 219, 0.15);
-            color: var(--text-color);
-        }
-        
-        .skill-item.locked {
-            background: var(--bg-primary);
-            color: var(--text-color);
-            opacity: 0.6;
-        }
-        
-        .skill-item::before {
-            content: "✓";
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            background: var(--accent-color);
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            margin-right: 8px;
-            font-size: 0.8rem;
-            opacity: 0;
-        }
-        
-        .skill-item.unlocked::before {
-            opacity: 1;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .skills-list {
-                grid-template-columns: 1fr;
-            }
-            
-            .module-status {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-            }
-        }
-    </style>
-
-    <script>
-        // Données de formation regroupées par module
-        const modulesData = [
-            {
-                id: "M1",
-                title: "Fondamentaux du Web",
-                description: "Bases du développement web, HTML5, CSS3 et outils de développement",
-                weeks: [
-                    { week: 1, start: "19 mai 2025", end: "23 mai 2025", skills: ["VS Code", "Git", "Node/npm", "Docker Compose", "Nginx"] },
-                    { week: 2, start: "26 mai 2025", end: "30 mai 2025", skills: ["HTML5 sémantique", "Accessibilité (ARIA)", "Formulaires HTML", "Audit Lighthouse", "Audit axe"] },
-                    { week: 3, start: "02 juin 2025", end: "06 juin 2025", skills: ["CSS3 Flexbox", "Box model", "Conteneur CSS", "Alignements", "Gap"] },
-                    { week: 4, start: "09 juin 2025", end: "13 juin 2025", skills: ["CSS3 Grid", "Responsive design", "Auto-fit/fill", "Unités fluides", "Images responsives"] }
-                ]
-            },
-            {
-                id: "M2",
-                title: "Design UX/UI",
-                description: "Conception d'interfaces utilisateur et expérience utilisateur",
-                weeks: [
-                    { week: 5, start: "16 juin 2025", end: "20 juin 2025", skills: ["UX", "Wireframing", "Personas", "User journeys", "Figma", "Adobe XD"] },
-                    { week: 6, start: "23 juin 2025", end: "27 juin 2025", skills: ["UI design", "Palette de couleurs", "Layouts", "Tailwind", "Bootstrap"] },
-                    { week: 7, start: "30 juin 2025", end: "04 juillet 2025", skills: ["Animations CSS", "SVG", "Transitions", "Keyframes", "Lottie", "WebP"] }
-                ]
-            },
-            {
-                id: "M3",
-                title: "JavaScript Avancé",
-                description: "Programmation JavaScript, DOM et jeux",
-                weeks: [
-                    { week: 8, start: "08 juillet 2025", end: "11 juillet 2025", skills: ["JavaScript (bases)", "Variables JS", "Conditions", "Fonctions", "Tableaux", "Boucles", "To-Do List"] },
-                    { week: 9, start: "15 juillet 2025", end: "18 juillet 2025", skills: ["DOM", "Événements JS", "Objets JS", "Drag and drop"] },
-                    { week: 10, start: "22 juillet 2025", end: "25 juillet 2025", skills: ["Canvas", "Dessins JS", "Collisions JS", "Gestion du score", "Jeu Snake"] },
-                    { week: 11, start: "29 juillet 2025", end: "01 août 2025", skills: ["Clavier virtuel", "SVG avancé", "Tests automatisés"] },
-                    { week: 12, start: "05 août 2025", end: "08 août 2025", skills: ["Refactorisation", "Audit code"] }
-                ]
-            },
-            {
-                id: "M4",
-                title: "Architecture JS",
-                description: "Applications monopages et gestion de données",
-                weeks: [
-                    { week: 13, start: "02 sept 2025", end: "20 sept 2025", skills: ["Architecture SPA", "Modules ES6", "EventEmitter", "Hash routing"] },
-                    { week: 14, start: "02 sept 2025", end: "20 sept 2025", skills: ["Liste de tâches", "DataStore", "DOM dynamique", "localStorage"] },
-                    { week: 15, start: "23 sept 2025", end: "27 sept 2025", skills: ["Chart.js", "Graphiques dynamiques"] },
-                    { week: 16, start: "30 sept 2025", end: "04 oct 2025", skills: ["Hash routing", "Accessibilité", "CSP", "Tests Jest & Cypress"] }
-                ]
-            },
-            {
-                id: "M5",
-                title: "PHP & Base de Données",
-                description: "Développement backend avec PHP et MySQL",
-                weeks: [
-                    { week: 17, start: "07 oct 2025", end: "25 oct 2025", skills: ["MCD/MLD", "User", "Article", "Comment", "Schéma SQL"] },
-                    { week: 18, start: "07 oct 2025", end: "25 oct 2025", skills: ["PHP POO", "UserDAO", "ArticleDAO", "CommentDAO", "PHPUnit"] },
-                    { week: 19, start: "28 oct 2025", end: "08 nov 2025", skills: ["Controllers", "Views PHP", "Routing", "Recherche"] },
-                    { week: 20, start: "14 oct 2025", end: "18 oct 2025", skills: ["Sécurité", "XSS", "CSRF", "Sessions", "Cypress", "Docker"] }
-                ]
-            },
-            {
-                id: "M6",
-                title: "React & Firebase",
-                description: "Applications modernes avec React et Firebase",
-                weeks: [
-                    { week: 21, start: "05 janv 2026", end: "09 janv 2026", skills: ["Setup React", "CRA/Vite", "Firestore/MongoDB", "Composants JSON"] },
-                    { week: 22, start: "12 janv 2026", end: "16 janv 2026", skills: ["useFirestoreCollection", "Liste projets dynamique"] },
-                    { week: 23, start: "19 janv 2026", end: "23 janv 2026", skills: ["Auth Firebase", "Email/Password", "JWT", "Permissions"] },
-                    { week: 24, start: "26 janv 2026", end: "30 janv 2026", skills: ["CRUD projets", "Validation formulaire", "PWA"] }
-                ]
-            },
-            {
-                id: "M7",
-                title: "Méthodologie Agile",
-                description: "Développement en équipe avec méthodologie Agile",
-                weeks: [
-                    { week: 25, start: "02 fév 2026", end: "06 fév 2026", skills: ["Sprint 1", "Backlog", "User Stories", "React Context", "Postman/Jest"] },
-                    { week: 26, start: "09 fév 2026", end: "13 fév 2026", skills: ["Sprint 2", "Auth backend", "React Context", "Tests"] },
-                    { week: 27, start: "16 fév 2026", end: "20 fév 2026", skills: ["Sprint 3", "MCD/MLD", "Migration DB", "PHPUnit"] },
-                    { week: 28, start: "23 fév 2026", end: "27 fév 2026", skills: ["Sprint 3", "CRUD événements", "Pagination/filtre", "Documentation"] }
-                ]
-            }
-        ];
-
-        /**
-         * Fonction pour parser les dates au format français
-         * Convertit "19 mai 2025" en objet Date valide
-         */
-        function parseFrenchDate(dateStr) {
-            const months = {
-                'janv': '01', 'fév': '02', 'mars': '03', 'avr': '04', 'mai': '05', 'juin': '06',
-                'juil': '07', 'août': '08', 'sept': '09', 'oct': '10', 'nov': '11', 'déc': '12'
-            };
-            
-            const parts = dateStr.split(' ');
-            const day = parts[0].padStart(2, '0');
-            const monthKey = parts[1].toLowerCase().replace('.', '');
-            const month = months[monthKey] || '01';
-            const year = parts[2];
-            
-            // Créer une date valide
-            const date = new Date(`${year}-${month}-${day}`);
-            
-            // Vérification de la validité de la date
-            if (isNaN(date)) {
-                console.error(`Date invalide: ${dateStr}`);
-                return new Date(); // Retourne la date actuelle en cas d'erreur
-            }
-            
-            return date;
-        }
-
-        /**
-         * Vérifie si un module est complété
-         */
-        function isModuleCompleted(module) {
-            const today = new Date();
-            const lastWeek = module.weeks[module.weeks.length - 1];
-            const endDate = parseFrenchDate(lastWeek.end);
-            return endDate < today;
-        }
-
-        /**
-         * Vérifie si un module est en cours
-         */
-        function isModuleCurrent(module) {
-            const today = new Date();
-            const firstWeek = module.weeks[0];
-            const lastWeek = module.weeks[module.weeks.length - 1];
-            
-            const startDate = parseFrenchDate(firstWeek.start);
-            const endDate = parseFrenchDate(lastWeek.end);
-            
-            return startDate <= today && endDate >= today;
-        }
-
-        /**
-         * Calcule le pourcentage de progression global
-         */
-        function calculateGlobalProgress() {
-            let totalSkills = 0;
-            let acquiredSkills = 0;
-            
-            modulesData.forEach(module => {
-                module.weeks.forEach(week => {
-                    totalSkills += week.skills.length;
-                    if (isWeekCompleted(week)) {
-                        acquiredSkills++;
-                    }
-                });
-            });
-            
-            return {
-                acquired: acquiredSkills,
-                total: totalSkills,
-                percentage: totalSkills > 0 ? (acquiredSkills / totalSkills) * 100 : 0
-            };
-        }
-
-        /**
-         * Vérifie si une semaine est complétée
-         */
-        function isWeekCompleted(week) {
-            const today = new Date();
-            const endDate = parseFrenchDate(week.end);
-            return endDate < today;
-        }
-
-        /**
-         * Met à jour le statut d'un module
-         */
-        function updateModuleStatus(moduleElement, module) {
-            const statusIcon = moduleElement.querySelector('.module-status-icon');
-            const content = moduleElement.querySelector('.module-content');
-            
-            // Si le module est développé
-            if (content.classList.contains('active')) {
-                statusIcon.textContent = '×';
-                return;
-            }
-            
-            // Déterminer le statut
-            if (isModuleCompleted(module)) {
-                statusIcon.style.background = '#2ecc71';
-                statusIcon.textContent = '✓';
-            } else if (isModuleCurrent(module)) {
-                statusIcon.style.background = '#f39c12';
-                statusIcon.textContent = '→';
-            } else {
-                statusIcon.style.background = '#95a5a6';
-                statusIcon.textContent = '○';
-            }
-        }
-
-        /**
-         * Génère l'interface de la timeline simplifiée
-         */
-        function initSimplifiedTimeline() {
-            const modulesContainer = document.querySelector('.modules-container');
-            const skillsList = document.getElementById('skills-list');
-            const progressCount = document.getElementById('progress-count');
-            const moduleProgress = document.getElementById('module-progress');
-            const completedModules = document.getElementById('completed-modules');
-            
-            // Calculer la progression globale
-            const progress = calculateGlobalProgress();
-            progressCount.textContent = `(${progress.acquired}/${progress.total})`;
-            
-            // Calculer les modules complétés
-            const completedModulesCount = modulesData.filter(m => isModuleCompleted(m)).length;
-            completedModules.textContent = completedModulesCount;
-            moduleProgress.style.width = `${(completedModulesCount / modulesData.length) * 100}%`;
-            
-            // Générer chaque module
-            modulesData.forEach(module => {
-                // Créer l'élément module
-                const moduleElement = document.createElement('div');
-                moduleElement.className = 'module-item';
-                
-                // Header du module
-                const header = document.createElement('div');
-                header.className = 'module-header';
-                header.setAttribute('data-module', module.id);
-                
-                header.innerHTML = `
-                    <div>
-                        <div class="module-title">${module.title}</div>
-                        <div class="module-description">${module.description}</div>
-                    </div>
-                    <div class="module-status">
-                        <span class="module-status-icon" style="background: #95a5a6">○</span>
-                    </div>
-                `;
-                
-                // Contenu détaillé (caché par défaut)
-                const content = document.createElement('div');
-                content.className = 'module-content';
-                
-                // Dates du module
-                const firstWeek = module.weeks[0];
-                const lastWeek = module.weeks[module.weeks.length - 1];
-                const moduleDates = `${firstWeek.start} → ${lastWeek.end}`;
-                
-                // Liste des compétences
-                let skillsHTML = '';
-                let acquiredCount = 0;
-                
-                module.weeks.forEach(week => {
-                    week.skills.forEach(skill => {
-                        const isAcquired = isWeekCompleted(week);
-                        if (isAcquired) acquiredCount++;
-                        
-                        skillsHTML += `
-                            <div class="skill-item ${isAcquired ? 'unlocked' : 'locked'}">
-                                ${skill}
-                            </div>
-                        `;
-                    });
-                });
-                
-                content.innerHTML = `
-                    <div class="module-dates">${moduleDates}</div>
-                    <div class="skills-list">
-                        ${skillsHTML}
-                    </div>
-                    <div class="module-stats">
-                        ${acquiredCount}/${module.weeks.reduce((sum, w) => sum + w.skills.length, 0)} compétences acquises
-                    </div>
-                `;
-                
-                // Ajouter les éléments au DOM
-                moduleElement.appendChild(header);
-                moduleElement.appendChild(content);
-                modulesContainer.appendChild(moduleElement);
-                
-                // Ajouter aux compétences globales si acquises
-                if (isModuleCompleted(module)) {
-                    module.weeks.forEach(week => {
-                        week.skills.forEach(skill => {
-                            if (isWeekCompleted(week)) {
-                                const skillItem = document.createElement('li');
-                                skillItem.innerHTML = `<strong>${module.id}</strong> - ${skill}`;
-                                skillsList.appendChild(skillItem);
-                            }
-                        });
-                    });
-                }
-                
-                // Initialiser le statut
-                updateModuleStatus(moduleElement, module);
-                
-                // Toggle d'expansion au clic
-                header.addEventListener('click', () => {
-                    content.classList.toggle('active');
-                    updateModuleStatus(moduleElement, module);
-                });
-            });
-        }
-
-        // Initialisation au chargement du DOM
-        document.addEventListener('DOMContentLoaded', initSimplifiedTimeline);
-    </script>
     
     <script src="./script.js"></script>
 </body>

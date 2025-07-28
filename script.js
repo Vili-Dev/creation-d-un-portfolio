@@ -73,6 +73,11 @@ function initThemeToggle() {
     });
 }
 
+// La fonction initSkillGame() a été supprimée car nous utilisons maintenant
+// une version statique des compétences dans a-propos.html
+// Cette fonction causait l'affichage de "undefined" car les attributs data-level et data-projects
+// n'étaient pas définis dans le HTML
+
 function initTimeline() {
     const timelineItems = document.querySelectorAll('.timeline-item');
     
@@ -80,6 +85,7 @@ function initTimeline() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
             }
         });
     }, { 
@@ -90,36 +96,11 @@ function initTimeline() {
     timelineItems.forEach(item => observer.observe(item));
 }
 
-function initSkillGame() {
-    const cards = document.querySelectorAll('.skill-card');
-    
-    cards.forEach(card => {
-        const back = document.createElement('div');
-        back.className = 'skill-back';
-        back.innerHTML = `
-            <p><strong>Niveau :</strong> ${card.dataset.level}</p>
-            <p><strong>Projets :</strong> ${card.dataset.projects}</p>
-        `;
-        card.appendChild(back);
-        
-        card.addEventListener('click', () => {
-            card.classList.toggle('flipped');
-            card.setAttribute('aria-pressed', card.classList.contains('flipped'));
-            card.setAttribute('aria-label', 
-                card.classList.contains('flipped') ? 
-                `Cacher les détails de ${card.dataset.skill}` : 
-                `Afficher les détails de ${card.dataset.skill}`
-            );
-        });
-    });
-}
-
 // Initialisation au chargement du DOM
 document.addEventListener('DOMContentLoaded', () => {
     initBackgroundAnimation();
     initThemeToggle();
     initTimeline();
-    initSkillGame();
     
     // Animation au défilement
     const sections = document.querySelectorAll('section');

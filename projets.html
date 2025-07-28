@@ -1,41 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets</title>
+    <title>Mes Réalisations - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- BANNIÈRE TEMPORAIRE POUR LA RECHERCHE DE STAGE -->
+    <div class="stage-banner">
+        <div class="banner-content">
+            <span class="banner-icon">📅</span>
+            <span class="banner-text">À la recherche d'un stage du 23 octobre au 31 décembre 2025</span>
+            <a href="me-contacter.html" class="banner-cta">Proposer une opportunité</a>
+        </div>
+    </div>
+    
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html" class="active">Projets</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="me-contacter.html">Me contacter</a></li>
+                <li><a href="projets.html" class="active">Mes Réalisations</a></li>
+                <li><a href="a-propos.html">Mon Parcours</a></li>
+                <li><a href="me-contacter.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h1>Mes Projets</h1>
-        <div class="projet">
-            <h2>Projet 1</h2>
-            <p>Description du projet 1</p>
-            <ul>
-                <li>Technologies utilisées : HTML, CSS</li>
-                <li><a href="#">Voir le projet</a></li>
-            </ul>
-        </div>
-        <div class="projet">
-            <h2>Projet 2</h2>
-            <p>Description du projet 2</p>
-            <ul>
-                <li>Technologies utilisées : JavaScript, React</li>
-                <li><a href="#">Voir le projet</a></li>
-            </ul>
-        </div>
+        <section id="presentation">
+            <div class="title-container">
+                <h1>Mes Réalisations</h1>
+            </div>
+            <div class="presentation">
+                <p>Découvrez mes projets concrets qui démontrent mes compétences en développement web.</p>
+            </div>
+        </section>
+        
+        <section id="realisations">
+            <!-- 1ère Réalisation : Calculatrice Améliorée -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="screenshots/calculatrice.webp" alt="Calculatrice Améliorée">
+                </div>
+                <div class="project-details">
+                    <h3>Calculatrice Améliorée</h3>
+                    
+                    <p><strong>Description :</strong> Application web moderne offrant des fonctionnalités avancées pour répondre aux besoins des utilisateurs techniques et occasionnels.</p>
+                    
+                    <p><strong>Fonctionnalités principales :</strong>
+                    <ul class="features-list">
+                        <li>Calculs scientifiques (trigonométrie, logarithmes, etc.)</li>
+                        <li>Historique des opérations sauvegardé en localStorage</li>
+                        <li>Thème clair/sombre avec persistance des préférences</li>
+                        <li>Interface tactile optimisée pour mobile</li>
+                    </ul></p>
+                    
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript (ES6+)</p>
+                    
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+                    
+                    <a href="https://calculatrice-ameliorer.netlify.app/" target="_blank" class="project-link">Voir le projet en ligne →</a>
+                </div>
+            </div>
+            
+            <!-- 2ème Réalisation : Pendu Dragon Ball -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="screenshots/exemple-dbz-pendu.webp" alt="Jeu du Pendu Dragon Ball">
+                </div>
+                <div class="project-details">
+                    <h3>Jeu du Pendu Dragon Ball</h3>
+                    
+                    <p><strong>Description :</strong> Adaptation thématique du jeu classique du pendu, spécialement conçue pour les fans de l'univers Dragon Ball.</p>
+                    
+                    <p><strong>Fonctionnalités principales :</strong>
+                    <ul class="features-list">
+                        <li>Interface dynamique avec animations CSS</li>
+                        <li>Compatibilité complète avec les écrans tactiles</li>
+                    </ul></p>
+                    
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript, Canvas</p>
+                    
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Canvas</span>
+                    </div>
+                    
+                    <a href="https://pendu-dragon-ball.netlify.app/" target="_blank" class="project-link">Voir le projet en ligne →</a>
+                </div>
+            </div>
+            
+            <!-- 3ème Réalisation : Tic Tac Toe -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="screenshots/tic-tac-toe.webp" alt="Jeu Tic Tac Toe">
+                </div>
+                <div class="project-details">
+                    <h3>Tic Tac Toe Amélioré</h3>
+                    
+                    <p><strong>Description :</strong> Version moderne et interactive du jeu Morpion classique, avec des fonctionnalités supplémentaires pour une expérience de jeu enrichie.</p>
+                    
+                    <p><strong>Fonctionnalités principales :</strong>
+                    <ul class="features-list">
+                        <li>Mode solo contre IA ou multijoueur local</li>
+                        <li>Animations fluides et feedback visuel</li>
+                    </ul></p>
+                    
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript (ES6+)</p>
+                    
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Animations</span>
+                    </div>
+                    
+                    <a href="https://tic-tac-toe-maw.netlify.app/" target="_blank" class="project-link">Voir le projet en ligne →</a>
+                </div>
+            </div>
+            
+            <!-- 4ème Réalisation : Menu Hub -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="screenshots/apercu-hub.webp" alt="Menu Hub Personnel">
+                </div>
+                <div class="project-details">
+                    <h3>Menu Hub Personnel</h3>
+                    
+                    <p><strong>Description :</strong> Page d'accueil personnalisée conçue pour centraliser l'accès à vos outils et ressources professionnelles.</p>
+                    
+                    <p><strong>Fonctionnalités principales :</strong>
+                    <ul class="features-list">
+                        <li>Liste des jeux créer dans le cadre de ma formation</li>
+                        <li>Interface responsive pour tous les appareils</li>
+                    </ul></p>
+                    
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript, Flexbox/Grid</p>
+                    
+                    <div class="tech-used">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    
+                    <a href="https://mon-menu-hub.netlify.app/" target="_blank" class="project-link">Voir le projet en ligne →</a>
+                </div>
+            </div>
+        </section>
     </main>
+    
     <script src="./script.js"></script>
 </body>
 </html>

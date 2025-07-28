@@ -3,34 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Me contacter - Mon Portfolio</title>
+    <title>Contact - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- BANNIÈRE TEMPORAIRE POUR LA RECHERCHE DE STAGE -->
+    <div class="stage-banner">
+        <div class="banner-content">
+            <span class="banner-icon">📅</span>
+            <span class="banner-text">À la recherche d'un stage du 23 octobre au 31 décembre 2025</span>
+            <a href="me-contacter.html" class="banner-cta">Proposer une opportunité</a>
+        </div>
+    </div>
+    
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="me-contacter.html" class="active">Me contacter</a></li>
+                <li><a href="projets.html">Mes Réalisations</a></li>
+                <li><a href="a-propos.html">Mon Parcours</a></li>
+                <li><a href="me-contacter.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
-        <section>
-            <h1>Me contacter</h1>
-            <form id="contact-form">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
+        <section id="presentation">
+            <div class="title-container">
+                <h1>Prêt à Collaborer ?</h1>
+            </div>
+            <div class="presentation">
+                <p>Je suis actuellement à la recherche d'un stage en entreprise du 23 octobre au 31 décembre 2025. Contactez-moi pour discuter de vos besoins en développement web et mobile.</p>
+            </div>
+        </section>
+        
+        <section id="contact-methods">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Par Email</h3>
+                    <p class="contact-value">votre.email@domaine.com</p>
+                    <p>Réponse sous 24h maximum</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>LinkedIn</h3>
+                    <p class="contact-value">linkedin.com/in/votreprofil</p>
+                    <p>Disponible pour échanger sur vos projets</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📄</div>
+                    <h3>CV Téléchargeable</h3>
+                    <a href="cv.pdf" class="download-button">Télécharger mon CV</a>
+                    <p>Version complète avec détails professionnels</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact-form-section">
+            <h2>Formulaire de Contact</h2>
+            <p>Préférez-vous envoyer un message directement ? Remplissez ce formulaire simple :</p>
+            
+            <form id="contact-form" class="rh-friendly-form">
+                <div class="form-group">
+                    <label for="name">Votre nom</label>
+                    <input type="text" id="name" name="name" required>
+                    <small>Nom et prénom pour personnaliser ma réponse</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Votre email professionnel</label>
+                    <input type="email" id="email" name="email" required>
+                    <small>Pour que je puisse vous répondre</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Type de collaboration</label>
+                    <select id="subject" name="subject">
+                        <option value="">Sélectionnez une option</option>
+                        <option value="stage">Stage du 23 octobre au 31 décembre</option>
+                        <option value="projet">Opportunité de projet</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+                    <small>Cela m'aide à prioriser votre demande</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <small>Décrivez simplement ce dont vous avez besoin</small>
+                </div>
+                
+                <button type="submit" class="submit-button">Envoyer ma demande</button>
             </form>
         </section>
+        
+        <section id="faq">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quel est mon domaine d'expertise ?</h3>
+                    <p>Je crée des applications web et mobiles intuitives qui résolvent des problèmes métier concrets. Mon focus est sur l'expérience utilisateur et la performance.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quels types de projets puis-je réaliser ?</h3>
+                    <p>J'ai développé des solutions pour la gestion de tâches, les portfolios interactifs et les jeux éducatifs. Je peux créer des applications sur mesure pour vos besoins spécifiques.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quand suis-je disponible ?</h3>
+                    <p>Je suis actuellement à la recherche d'un stage en entreprise du <strong>23 octobre au 31 décembre 2025</strong>. Après cette période, je continuerai ma formation jusqu'en février 2026.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="script.js"></script>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
