@@ -17,17 +17,62 @@
 [data-theme="dark"] {
   --bg-primary: #121212;
   --bg-secondary: #1e1e1e;
-  --text-color: #e0e0e0;
+  --text-color: #ffffff; /* Improved contrast for dark theme */
   --card-bg: #2d2d2d;
   --header-bg: #1a1a1a;
   --accent-color: #5dade2;
+}
+/* Corrections complètes pour le texte en mode sombre */
+[data-theme="dark"] {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] * {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .features-list li,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .presentation,
+[data-theme="dark"] p,
+[data-theme="dark"] small,
+[data-theme="dark"] .banner-text,
+[data-theme="dark"] .contact-value,
+[data-theme="dark"] .skill-level-value {
+  color: #ffffff !important;
+}
+
+/* Corrections supplémentaires pour le mode sombre */
+[data-theme="dark"] {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .features-list li,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .presentation,
+[data-theme="dark"] p,
+[data-theme="dark"] small,
+[data-theme="dark"] .banner-text,
+[data-theme="dark"] .contact-value {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .features-list {
+  color: #ffffff !important;
+}
+
+/* Correction globale pour le texte en mode sombre */
+[data-theme="dark"] * {
+  color: #ffffff !important;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    padding-top: 40px; /* Espace pour la bannière de stage */
+    padding-top: 0; /* Suppression de l'espace réservé car bannière fixe */
     line-height: 1.8;
     background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
     color: var(--text-color);
@@ -37,15 +82,140 @@ body {
 
 /* Bannière de stage temporaire */
 .stage-banner {
-    background: #2c3e50;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    background: #2c3e50;
+    color: white;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+header {
+    margin-top: 14px; /* Espace pour la bannière de stage fixe */
+}
+
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Corrections supplémentaires pour le mode sombre */
+[data-theme="dark"] {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .features-list li,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .presentation,
+[data-theme="dark"] p,
+[data-theme="dark"] small,
+[data-theme="dark"] .banner-text {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .features-list {
+  color: #ffffff !important;
+}
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+}
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
 }
 
 .banner-content {
@@ -108,6 +278,32 @@ canvas {
     height: 100%;
     z-index: -1;
     background-color: transparent;
+}
+
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
 }
 
 header {
@@ -666,4 +862,71 @@ h2 {
     h2 {
         font-size: 1.5rem;
     }
+}
+/* Theme Toggle Button - Always visible at bottom right */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background-color: #333;
+  border-color: #fff;
+  color: #fff;
+}
+/* Correction complète pour le texte en mode sombre */
+[data-theme="dark"] {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] * {
+  color: #ffffff !important;
+}
+
+/* Correction spécifique pour les éléments problématiques */
+[data-theme="dark"] .features-list li,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .faq-item,
+[data-theme="dark"] .presentation,
+[data-theme="dark"] p,
+[data-theme="dark"] small,
+[data-theme="dark"] .banner-text,
+[data-theme="dark"] .contact-value {
+  color: #ffffff !important;
+}
+/* Fix banner positioning at top of all pages */
+.stage-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add space for fixed banner */
+body {
+    padding-top: 40px; /* Height of banner + some padding */
+}
+
+/* Ensure all text is white in dark mode */
+[data-theme="dark"] * {
+    color: #ffffff !important;
 }
